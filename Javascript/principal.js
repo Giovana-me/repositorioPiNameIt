@@ -3,7 +3,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (botaoJogar) {
         botaoJogar.addEventListener("click", function () {
-            window.location.href = "login.html";
+            window.location.href = "Html/login.html";
+        });
+    } else {
+        console.error("Erro: O botão 'Jogar' não foi encontrado. Verifique a classe no HTML.");
+    }
+});
+document.addEventListener("DOMContentLoaded", function () {
+    let botaoCadastro = document.querySelector(".botaoCadastro");
+
+    if (botaoCadastro) {
+        botaoCadastro.addEventListener("click", function () {
+            window.location.href = "Html/cadastro.html";
         });
     } else {
         console.error("Erro: O botão 'Jogar' não foi encontrado. Verifique a classe no HTML.");
